@@ -39,4 +39,4 @@ jobs:
        # Deploy to (or Create) the Elastic Beanstalk environment
       - name: Create test environment & deploy
         run: |
-          (poetry run eb use pillar-environment && eb status pillar-environment && eb deploy) || poetry run eb create pillar-environment
+          (poetry run eb use pillar-environment && poetry eb status pillar-environment && poetry run eb deploy) || poetry run eb create pillar-environment
