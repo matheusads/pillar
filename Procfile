@@ -1,1 +1,1 @@
-web: gunicorn pillar.app:app --workers=4 --worker-class=uvicorn.workers.UvicornWorker
+web: gunicorn pillar.app:app --bind:5000 --workers=4 --worker-class=uvicorn.workers.UvicornWorker
