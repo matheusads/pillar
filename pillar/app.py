@@ -1,5 +1,6 @@
 from fastapi import FastAPI
-from .models import RequestModel, Order
+
+from .models import Order, RequestModel
 
 app = FastAPI()
 
