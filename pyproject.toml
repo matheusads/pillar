@@ -2,7 +2,7 @@
 name = "pillar"
 version = "0.1.0"
 description = ""
-authors = ["Matheus Souza <matheus.souza@condoconta.com.br>"]
+authors = ["Matheus Souza <matheusamorimsouza@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
