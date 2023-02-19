@@ -1,5 +1,5 @@
 from enum import Enum
-from typing import Optional
+from typing import List, Optional
 
 from pydantic import BaseModel, constr
 
@@ -10,7 +10,7 @@ class Order(str, Enum):
 
 
 class RequestModel(BaseModel):
-    words: list[constr(strict=True)]
+    words: List[constr(strict=True)]
     order: Optional[Order] = Order.asc
 
     class Config:
