@@ -1,1 +1,1 @@
-web: gunicorn pillar.app:app -w 1 -k uvicorn.workers.UvicornWorker
+web: gunicorn pillar.app:app --workers=4 --worker-class=uvicorn.workers.UvicornWorker
