@@ -1,5 +1,6 @@
-from pillar.app import app
 from fastapi.testclient import TestClient
+
+from pillar.app import app
 
 client = TestClient(app)
 
