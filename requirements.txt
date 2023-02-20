@@ -35,7 +35,6 @@ orjson==3.8.6
 packaging==23.0
 pathspec==0.9.0
 pbr==5.11.1
--e git+ssh://git@github.com/matheusads/pillar.git@751194f463a3c5e1646f7097e4cc1a7e82a25a86#egg=pillar
 platformdirs==3.0.0
 pluggy==1.0.0
 pycodestyle==2.10.0
