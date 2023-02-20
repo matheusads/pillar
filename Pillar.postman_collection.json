@@ -1,0 +1,104 @@
+{
+	"info": {
+		"_postman_id": "5a195038-5097-4e44-a5ed-ca2005debddd",
+		"name": "Pillar",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Vowel Count",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"words\": [\"batman\", \"coringa\", \"robin\"], \"order\": \"desc\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://pillar-environment.eba-m9p4rnar.sa-east-1.elasticbeanstalk.com/sort/",
+					"protocol": "http",
+					"host": [
+						"pillar-environment",
+						"eba-m9p4rnar",
+						"sa-east-1",
+						"elasticbeanstalk",
+						"com"
+					],
+					"path": [
+						"sort",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sort words asc",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"words\": [\"batman\", \"coringa\", \"robin\"]}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://pillar-environment.eba-m9p4rnar.sa-east-1.elasticbeanstalk.com/vowel_count",
+					"protocol": "http",
+					"host": [
+						"pillar-environment",
+						"eba-m9p4rnar",
+						"sa-east-1",
+						"elasticbeanstalk",
+						"com"
+					],
+					"path": [
+						"vowel_count"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sort words desc",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"words\": [\"batman\", \"coringa\", \"robin\"]}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://pillar-environment.eba-m9p4rnar.sa-east-1.elasticbeanstalk.com/sort/",
+					"protocol": "http",
+					"host": [
+						"pillar-environment",
+						"eba-m9p4rnar",
+						"sa-east-1",
+						"elasticbeanstalk",
+						"com"
+					],
+					"path": [
+						"sort",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
