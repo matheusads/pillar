@@ -21,4 +21,8 @@ Response expected:
  ```["batman", "coringa", "robin"]```
 
 
+Other requirements are create a pipeline that runs lint, test and deploy to a cloud provider.
+
+I choose use FastApi to have auto generated documentation at ```/docs``` and a good error handling.
+
 
